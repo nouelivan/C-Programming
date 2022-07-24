@@ -1,2 +1,2 @@
 # C-Programming
-A few projects programmed in the C language. 
+A few projects programmed in the C++ language. 
