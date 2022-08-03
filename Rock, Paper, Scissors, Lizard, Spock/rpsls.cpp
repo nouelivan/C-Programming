@@ -24,7 +24,7 @@ std::cout << "4) 🦎\n";
 std::cout << "5) 🖖\n";
 
 std::cout << "shoot!\n";
-std::cout << "What's your choice wise one? ";
+std::cout << "\nWhat's your choice wise one? ";
 std::cin >> user;
 
 if (computer == user) {
