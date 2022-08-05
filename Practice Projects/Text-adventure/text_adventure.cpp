@@ -24,7 +24,6 @@ int first_arc(int lives) {
       std::cout << "\n1) 🏍\n";
       std::cout << "\n2) 🚗\n";
       std::cin >> choice;
-      std::cout << "===========================================\n";
       if (choice == 2) {
         std::cout << "\nNice! You've also got a chip embedded into your brain and used the powers provided to hack into the car and make your escape out of the city.\n";
         std::cout << "============================================\n";
@@ -82,7 +81,6 @@ int second_arc(int lives) {
       } else {
           std::cout << "\nYou lose control of the car, spin out, and slide towards another vehicle hitting your driver door with great strength and leaving you stuck and unable to move your left leg.\n";
           std::cout << "\nThe bandits reach you and put you out of your misery.\n";
-          std::cout << "\nLet's try again!";
           std::cout << "============================================\n";
           i -= 1;
       }
@@ -130,7 +128,6 @@ int third_arc(int lives) {
       std::cout << "============================================\n";
     } else {
       std::cout << "\nYou enter through the main entrace and stumble upon bandits who grab and kill you.\n";
-      std::cout << "\nLet's try again!\n";
       i -= 1;
     }
 
