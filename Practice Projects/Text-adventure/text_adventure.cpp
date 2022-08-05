@@ -24,9 +24,9 @@ int first_arc(int lives) {
       std::cout << "\n1) 🏍\n";
       std::cout << "\n2) 🚗\n";
       std::cin >> choice;
+      std::cout << "============================================\n"; 
       if (choice == 2) {
         std::cout << "\nNice! You've also got a chip embedded into your brain and used the powers provided to hack into the car and make your escape out of the city.\n";
-        std::cout << "============================================\n";
         break;
     } else {
         std::cout << "\nYou successfully hacked the motorcycle using the chip embedded into your brain and sped off. But, due to the openness of the motorcycle, you were struck before getting too far and died.\n";
@@ -52,14 +52,14 @@ int second_arc(int lives) {
   int choice;
   int i;
 
-  std::cout << "============================================\n";
-  std::cout << "\nYou've made it out of the city and onto the highway. There are many ways to get to Wellington and some are more dangerous than others. You can either take Exit 33 onto the Turpike or continue on I-95.\n";
-  std::cout << "Enter 1 to take the Turnpike or 2 to continue on I-95: ";
-  std::cin >> choice;
-  std::cout << "============================================\n";
-
   // Checks for lives left and tests choices.
   for (i = lives_left; i > 0;){
+    std::cout << "============================================\n";
+    std::cout << "\nYou've made it out of the city and onto the highway. There are many ways to get to Wellington and some are more dangerous than others. You can either take Exit 33 onto the Turpike or continue on I-95.\n";
+    std::cout << "Enter 1 to take the Turnpike or 2 to continue on I-95: ";
+    std::cin >> choice;
+    std::cout << "============================================\n";
+  
     if (choice == 1) {
       std::cout << "\nYou take Exit 33 and see an abundance of abandoned cars scattered everywhere. Driving through will be challenging, but you decide to go with your gut and proceed straight.\n";
       std::cout << "\n As you continue to drive the hours pass and you notice that since your departure from home, five hours have flown by. This leaves you with just over four hours to change your destiny.\n";
@@ -78,6 +78,9 @@ int second_arc(int lives) {
           std::cout << "\nYou jump from the moving car and ferociously run towards another nearest to you. Once in, you hack into it and get on 95.\n";
           std::cout << "============================================\n";
           break;
+      } else if ((choice < 1) || (choice > 2)) {
+      std::cout << "You've entered an invalid choice, try again!";
+      std::cout << "============================================\n";
       } else {
           std::cout << "\nYou lose control of the car, spin out, and slide towards another vehicle hitting your driver door with great strength and leaving you stuck and unable to move your left leg.\n";
           std::cout << "\nThe bandits reach you and put you out of your misery.\n";
