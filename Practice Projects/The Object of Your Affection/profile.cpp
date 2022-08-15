@@ -1,3 +1,5 @@
+// File that stores the function definitions.
+
 #include <iostream>
 #include "profile.hpp"
 
